@@ -15,7 +15,7 @@ const CourseCard = ({ courses }) => {
             className="w-full h-36 object-cover"
           />
           <div className="p-6">
-            <h2 className="font-bold text-lg mb-2">
+            <h2 className="font-bold text-lg mb-2 text-gray-700">
               Course Name: {course.name}
             </h2>
             <p className="text-gray-700 mb-5">Instructor: {course.instructor}</p>

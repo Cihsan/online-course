@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   const [enrolledCourses, setEnrolledCourses] = useState(courses);
 
-  const markAsCompleted = courseId => {
+  const makeCompleted = courseId => {
     setEnrolledCourses(prevCourses =>
       prevCourses.map(course =>
         course.id === courseId ? { ...course, completed: true } : course
@@ -53,7 +53,7 @@ const Dashboard = () => {
             </thead>
             <tbody>
               <>
-                {enrolledCourses.map(course => (
+                {enrolledCourses?.map(course => (
                   <tr
                     key={course.id}
                     className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600"
@@ -82,10 +82,10 @@ const Dashboard = () => {
                         </span>
                       ) : (
                         <button
-                          onClick={() => markAsCompleted(course.id)}
+                          onClick={() => makeCompleted(course.id)}
                           className="bg-blue-500 text-white py-1 px-3 rounded-md hover:bg-blue-600"
                         >
-                          Mark as Completed
+                          Make Complete
                         </button>
                       )}
                     </td>
