@@ -1,9 +1,14 @@
-# React + Vite
+## Online Course
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(Online Course Management Application) 
+React Redux Project By `Job Task Assignment`
 
-Currently, two official plugins are available:
+## Features
+- Global State Managed By Redux Store 
+- Search Function Implement.
+- React Router
+- Use Tailwind CSS
+- Eeaily Add API In this Project 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# online-course
+## Technologies
+- Fontend : React & Redux
